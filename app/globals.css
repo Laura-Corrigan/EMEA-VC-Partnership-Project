@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------
+   Design tokens — EMEA Venture Partnerships / Vanta
+   Palette grounded in Vanta's real brand marks:
+   Vanta Purple #AC55FF, Vanta Dark Purple #240642,
+   Vanta White #F8F4F3 — set inside a near-black "graph" canvas.
+--------------------------------------------------------- */
+:root {
+  --ink: #09060f;
+  --surface: #130a20;
+  --surface-2: #1c1030;
+  --surface-3: #261440;
+  --deep: #240642;
+  --accent: #ac55ff;
+  --accent-2: #7c3aed;
+  --accent-soft: rgba(172, 85, 255, 0.14);
+  --paper: #f8f4f3;
+  --mist: #a89cb8;
+  --mist-dim: #6f6480;
+  --line: rgba(248, 244, 243, 0.09);
+  --line-strong: rgba(248, 244, 243, 0.16);
+  --mint: #6ee7b7;
+  --amber: #f2b25c;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-deep: var(--deep);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+  --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-mist-dim: var(--mist-dim);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-mint: var(--mint);
+  --color-amber: var(--amber);
+
+  --font-display: "Fraunces Variable", ui-serif, Georgia, serif;
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SFMono-Regular", monospace;
+
+  --animate-drift: drift 22s ease-in-out infinite;
+  --animate-pulse-slow: pulseSlow 3.2s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -10px, 0); }
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--ink);
+}
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  border-color: var(--line);
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--ink);
+}
+
+/* Hairline scrollbar to match the instrument aesthetic */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--ink); }
+::-webkit-scrollbar-thumb { background: var(--surface-3); border-radius: 999px; border: 2px solid var(--ink); }
+
+/* Visible, deliberate keyboard focus — never suppressed */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono { font-family: var(--font-mono); }
+
+.text-balance { text-wrap: balance; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
