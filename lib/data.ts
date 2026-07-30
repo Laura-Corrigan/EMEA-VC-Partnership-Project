@@ -94,10 +94,6 @@ export const timeline: TimelinePhase[] = [
         detail: "Start reporting on partnership metrics.",
       },
       {
-        title: "Deepen, don't spread",
-        detail: "Deepen engagement with top-priority partners, rather than trying to meet everyone.",
-      },
-      {
         title: "Show up in market",
         detail: "Attend relevant ecosystem events, represent Vanta in the market.",
       },
@@ -315,3 +311,6 @@ export const bonusIdea: TargetedIdea = {
   approach: "Deel presents the show; Mishcon, Chargebee, SurrealDB and Airwallex have all partnered on it already — same audience the five ideas above reach one relationship at a time.",
   outcome: "Broader visibility behind the targeted work — only once sponsorship budget is confirmed, separate from the relationship-building budget.",
 };
+
+export const postscript =
+  "I'm also training as a Pilates instructor — happy to run a session for founders sometime, no pitch attached.";

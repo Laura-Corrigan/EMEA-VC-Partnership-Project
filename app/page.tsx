@@ -5,6 +5,7 @@ import { SuccessMetrics } from "@/components/SuccessMetrics";
 import { FiveIdeas } from "@/components/FiveIdeas";
 import { SideRail } from "@/components/SideRail";
 import { MobileProgress } from "@/components/MobileProgress";
+import { postscript } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -16,6 +17,13 @@ export default function Home() {
       <EuropeMap />
       <SuccessMetrics />
       <FiveIdeas />
+
+      <div className="border-t border-line px-6 py-14 md:px-14">
+        <p className="mx-auto max-w-xl text-center font-mono text-sm text-mist">
+          P.S. — {postscript}
+        </p>
+      </div>
+
       <footer className="border-t border-line px-6 py-10 md:px-14">
         <div className="mx-auto flex max-w-4xl justify-center">
           <a
