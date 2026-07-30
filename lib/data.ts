@@ -191,8 +191,8 @@ export const europeRegions: EuropeRegion[] = [
     cx: 168,
     cy: 118,
     accelerators: ["Entrepreneur First", "Founders Factory"],
-    vcs: ["LocalGlobe", "Episode 1", "Index Ventures"],
-    events: ["SaaStock", "London Tech Week"],
+    vcs: ["LocalGlobe", "Episode 1", "Seedcamp", "Cherry Ventures"],
+    events: ["Scaling Europe", "Mountside Ventures"],
   },
   {
     id: "france",
@@ -200,16 +200,16 @@ export const europeRegions: EuropeRegion[] = [
     cx: 210,
     cy: 200,
     accelerators: ["Station F", "HEC Incubateur"],
-    vcs: ["Partech", "Alven", "Elaia"],
-    events: ["VivaTech"],
+    vcs: ["Partech", "Frst", "Elaia"],
+    events: ["VivaTech", "UnlockVC"],
   },
   {
     id: "dach",
     name: "DACH",
     cx: 290,
     cy: 150,
-    accelerators: ["APX", "Merantix"],
-    vcs: ["HV Capital", "Point Nine"],
+    accelerators: ["APX", "Münzstraße"],
+    vcs: ["HV Capital", "Point Nine", "AtlanticLabs"],
     events: ["Bits & Pretzels"],
   },
   {
@@ -218,26 +218,8 @@ export const europeRegions: EuropeRegion[] = [
     cx: 320,
     cy: 60,
     accelerators: ["Antler Nordics", "Startup Sauna"],
-    vcs: ["EQT Ventures", "Creandum", "Northzone"],
+    vcs: ["EQT Ventures", "Creandum", "Northzone", "Byfounders"],
     events: ["Slush"],
-  },
-  {
-    id: "netherlands",
-    name: "Netherlands",
-    cx: 240,
-    cy: 130,
-    accelerators: ["Rockstart", "Antler Amsterdam"],
-    vcs: ["Peak Capital", "Prime Ventures"],
-    events: ["TNW Conference"],
-  },
-  {
-    id: "southern",
-    name: "Southern Europe",
-    cx: 180,
-    cy: 280,
-    accelerators: ["Lanzadera", "Conector"],
-    vcs: ["Kibo Ventures", "United Ventures", "Indico Capital"],
-    events: ["South Summit", "Web Summit"],
   },
 ];
 
@@ -275,45 +257,6 @@ export const kpiTargets: KpiTarget[] = [
   },
 ];
 
-export type ProcessStage = {
-  code: string;
-  name: string;
-  behavior: string;
-  avoid: string;
-  signal: string;
-};
-
-export const processStages: ProcessStage[] = [
-  {
-    code: "01",
-    name: "Earn the right in",
-    behavior: "Know a fund's portfolio and thesis before reaching out. Have a real reason to talk.",
-    avoid: "Open with a pitch for a partner programme.",
-    signal: "The platform lead replies to the second email.",
-  },
-  {
-    code: "02",
-    name: "Build the relationship",
-    behavior: "Stay useful with no ask attached — intel, a good intro, a straight answer.",
-    avoid: "Log every chat as a stage toward a close.",
-    signal: "They loop me into things I wasn't invited to.",
-  },
-  {
-    code: "03",
-    name: "Recognise the real moment",
-    behavior: "Notice when a founder is actually close to an audit or enterprise deal. Introduce because it helps them.",
-    avoid: "Force an intro before the need is real.",
-    signal: "The founder thanks the fund.",
-  },
-  {
-    code: "04",
-    name: "Bring Sales in as a peer",
-    behavior: "Hand context to the right AE personally, before the founder fills out a form.",
-    avoid: "Drop a lead record over the wall.",
-    signal: "Sales asks what's in the pipeline before I've told them.",
-  },
-];
-
 export type TargetedIdea = {
   code: string;
   name: string;
@@ -330,7 +273,7 @@ export const targetedIdeas: TargetedIdea[] = [
     name: "Tier-one target map",
     pitch: "25–30 funds, ranked. Starting in London with Seedcamp, Balderton, Backed VC and Cherry Ventures.",
     target: "Priority-tier VC platform teams, London first",
-    approach: "Specific reasons for each fund — portfolio stage, existing overlap, or a live deal already moving.",
+    approach: "Specific reasons for each fund: portfolio stage, existing overlap, or a live deal already moving.",
     outcome: "Everything else here depends on this list existing first.",
     featured: true,
   },
@@ -339,32 +282,24 @@ export const targetedIdeas: TargetedIdea[] = [
     name: "Champion-led referral loop",
     pitch: "Ask existing VC-backed customers for a warm intro to their own investor's platform team.",
     target: "VC-backed customers who'd give a strong reference",
-    approach: "Customer Success asks, not Partnerships cold-emailing a platform team.",
-    outcome: "Every intro arrives pre-vouched for.",
   },
   {
     code: "03",
     name: "Curated founder dinners",
-    pitch: "8–10 founders, one dinner, one fund's portfolio — starting with Balderton in London.",
+    pitch: "8–10 founders, one dinner, one fund's portfolio, starting with Balderton in London.",
     target: "Series A–B founders inside 3–5 flagship funds",
-    approach: "One fund, one dinner, one follow-up ask.",
-    outcome: "A handful of high-trust intros.",
   },
   {
     code: "04",
     name: "Platform playbook",
     pitch: "A short \"get audit-ready\" playbook, built with 2–3 platform leads — Seedcamp and Balderton first.",
     target: "Platform leads at 5–8 top-tier funds",
-    approach: "One build, distributed by the fund itself.",
-    outcome: "Vanta's the default answer before a founder starts searching.",
   },
   {
     code: "05",
     name: "Compliance fast-track hours",
     pitch: "Monthly office hours for founders close to their first audit or enterprise deal — starting with Cherry Ventures' AI portfolio, already selling into enterprise.",
     target: "Founders 3–6 months out from SOC 2 or ISO 27001",
-    approach: "Timed to the moment it matters.",
-    outcome: "Turns real urgency into pipeline.",
   },
 ];
 
@@ -372,7 +307,4 @@ export const bonusIdea: TargetedIdea = {
   code: "06",
   name: "Partner with Scaling Europe",
   pitch: "Seb Johnson is becoming the go-to media voice in European tech — newsletter and podcast read by tens of thousands of founders and investors every week. Partner on an episode or one of his live shows, if budget allows.",
-  target: "European founders and investors already listening to Scaling Europe",
-  approach: "Deel presents the show; Mishcon, Chargebee, SurrealDB and Airwallex have all partnered on it already — same audience the five ideas above reach one relationship at a time.",
-  outcome: "Broader visibility behind the targeted work — only once sponsorship budget is confirmed, separate from the relationship-building budget.",
 };
