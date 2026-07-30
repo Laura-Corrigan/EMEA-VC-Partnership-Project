@@ -1,8 +1,32 @@
+export type TimelineItem = {
+  title: string;
+  detail: string;
+  group?: string;
+};
+
+export type SpotlightEntry = {
+  name: string;
+  detail: string;
+};
+
+export type TimelinePhase = {
+  code: string;
+  range: string;
+  verb: string;
+  summary: string;
+  items: TimelineItem[];
+  spotlight?: {
+    label: string;
+    entries: SpotlightEntry[];
+  };
+  deliverables?: string[];
+};
+
 export const timeline: TimelinePhase[] = [
   {
     code: "01",
     range: "Days 1–30",
-    verb: "Ship",
+    verb: "Build",
     summary:
       "Get close to the product and founder journey while immediately activating my network and building the systems Vanta needs to scale partnerships across EMEA.",
     items: [
@@ -43,7 +67,7 @@ export const timeline: TimelinePhase[] = [
   {
     code: "02",
     range: "Days 31–60",
-    verb: "Prove",
+    verb: "Launch",
     summary:
       "Turn early conversations into repeatable partnership programmes that create value for founders and measurable pipeline for Vanta.",
     spotlight: {
@@ -114,7 +138,7 @@ export const timeline: TimelinePhase[] = [
   {
     code: "03",
     range: "Days 61–90",
-    verb: "Compound",
+    verb: "Scale",
     summary:
       "Scale what is working and build repeatable systems that make the EMEA partnerships function more valuable over time.",
     items: [
@@ -294,13 +318,13 @@ export type TargetedIdea = {
 
 export const targetedIdeas: TargetedIdea[] = [
   {
-  code: "01",
-  name: "Warm relationship activation",
-  pitch:
-    "Launch with five London-based VC funds where I already have established relationships, using those trusted connections to create early founder referrals and build partnership momentum from day one.",
-  target:
-    "Priority VC and platform teams with the strongest potential to generate qualified founder introductions.",
-  featured: true,
+    code: "01",
+    name: "Warm relationship activation",
+    pitch:
+      "Launch with five London-based VC funds where I already have established relationships, using those trusted connections to create early founder referrals and build partnership momentum from day one.",
+    target:
+      "Priority VC and platform teams with the strongest potential to generate qualified founder introductions.",
+    featured: true,
   },
   {
     code: "02",
