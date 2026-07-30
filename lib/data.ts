@@ -322,13 +322,13 @@ export type TargetedIdea = {
 
 export const targetedIdeas: TargetedIdea[] = [
   {
-    code: "01",
-    name: "Warm relationship activation",
-    pitch:
-      "Prioritise 25–30 high-potential VC relationships, starting in London with Seedcamp, Balderton, Backed VC and Cherry Ventures.",
-    target:
-      "Priority VC and platform relationships with strong founder referral potential",
-    featured: true,
+  code: "01",
+  name: "Warm relationship activation",
+  pitch:
+    "Launch with five London-based VC funds where I already have established relationships, using those trusted connections to create early founder referrals and build partnership momentum from day one.",
+  target:
+    "Priority VC and platform teams with the strongest potential to generate qualified founder introductions.",
+  featured: true,
   },
   {
     code: "02",
