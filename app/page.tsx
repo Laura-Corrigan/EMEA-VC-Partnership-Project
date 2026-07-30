@@ -18,7 +18,7 @@ export default function Home() {
       <FiveIdeas />
       <footer className="border-t border-line px-6 py-10 md:px-14">
         <div className="mx-auto flex max-w-4xl justify-center">
-          
+          <a
             href="#hero"
             className="font-mono text-[11px] uppercase tracking-wider text-mist-dim transition-colors hover:text-paper"
           >
