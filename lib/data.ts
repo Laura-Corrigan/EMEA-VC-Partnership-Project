@@ -1,194 +1,166 @@
-export type TimelineItem = {
-  title: string;
-  detail: string;
-  group?: string;
-};
-
-export type SpotlightEntry = {
-  name: string;
-  detail: string;
-};
-
-export type TimelinePhase = {
-  code: string;
-  range: string;
-  verb: string;
-  summary: string;
-  items: TimelineItem[];
-  spotlight?: {
-    label: string;
-    entries: SpotlightEntry[];
-  };
-  deliverables?: string[];
-};
-
 export const timeline: TimelinePhase[] = [
   {
     code: "01",
     range: "Days 1–30",
-    verb: "Discovery",
+    verb: "Ship",
     summary:
-      "Build a deep understanding of the product, internal priorities and where existing relationships can create the fastest route to qualified founder pipeline.",
+      "Get close to the product and founder journey while immediately activating my network and building the systems Vanta needs to scale partnerships across EMEA.",
     items: [
       {
-        title: "Understand product",
+        title: "Launch a VC listening tour",
         detail:
-          "Build a detailed understanding of Vanta's product, customer pain points, sales process and the common barriers faced by seed-stage founders.",
+          "Use my existing relationships to begin discovery meetings from day one. Meet 20+ investors and platform leaders to understand how they support founders through security, procurement and enterprise readiness.",
       },
       {
-        title: "Internal alignment",
+        title: "Build the EMEA Partnership CRM",
         detail:
-          "Meet Sales, Marketing and Product to understand what is already in motion, define the ideal partner profile and ensure day-one network activity supports existing priorities.",
+          "Create a live relationship dashboard categorising priority VC partners by geography, sector, relationship strength, founder fit, referral potential and next actions. Turn relationships into an active partnership pipeline.",
       },
       {
-        title: "Prioritise warm VC leads",
+        title: "Activate five London VC relationships",
         detail:
-          "Identify and prioritise the warm relationships within my existing network that have the strongest potential to generate qualified founder referrals.",
+          "Launch with five London-based VC funds where I already have established relationships, using those trusted connections to generate founder introductions and partnership momentum immediately.",
       },
       {
-        title: "Activate existing relationships",
+        title: "Map the founder journey",
         detail:
-          "Leverage existing relationships to begin VC discovery meetings from day one, understand what each fund and its portfolio need, and identify the strongest early partnership opportunities.",
+          "Shadow sales calls, onboarding and customer conversations to understand where compliance becomes a blocker and identify opportunities where VC partners can add value.",
       },
+      {
+        title: "Ship the first market insight",
+        detail:
+          "Publish an internal report summarising investor conversations, founder pain points and recommendations for Product, Sales and Marketing.",
+      },
+    ],
+    deliverables: [
+      "20+ VC discovery meetings",
+      "EMEA Partnership CRM",
+      "Five activated VC relationships",
+      "First founder introductions",
+      "Market insight report",
     ],
   },
   {
     code: "02",
     range: "Days 31–60",
-    verb: "Pilot",
+    verb: "Prove",
     summary:
-      "Turn early discovery into two focused partnership programmes, starting with the relationships most likely to deliver value quickly.",
+      "Turn early conversations into repeatable partnership programmes that create value for founders and measurable pipeline for Vanta.",
     spotlight: {
-      label: "Starting in London",
+      label: "Potential launch partners",
       entries: [
         {
           name: "Seedcamp",
           detail:
-            "Direct LP relationship and established personal relationships with members of the team.",
+            "Launch the first founder programme with an existing relationship.",
         },
         {
           name: "Balderton",
           detail:
-            "Established relationships across the fund, including its platform and go-to-market network supporting portfolio companies.",
+            "Work closely with the platform team to support portfolio founders.",
         },
         {
           name: "Backed VC",
           detail:
-            "Direct LP relationship and experience co-investing alongside the team, with an established route into its founder and portfolio community.",
+            "Build on an existing LP relationship and previous co-investment experience.",
         },
         {
           name: "Cherry Ventures",
           detail:
-            "Existing relationship with the fund as it builds its London presence, with strong relevance across AI and enterprise software companies.",
+            "Support founders across AI and enterprise software through existing relationships.",
         },
       ],
     },
     items: [
       {
-        title: "Founder Compliance Office Hours",
+        title: "Launch Founder Compliance Office Hours",
         detail:
-          "Pilot monthly, invite-only office hours for founders approaching their first audit, enterprise customer or formal security review.",
+          "Pilot monthly office hours with one or two VC partners for founders preparing for enterprise customers or their first audit.",
       },
       {
-        title: "Founder dinner",
+        title: "Host the first founder dinner",
         detail:
-          "Run an invite-only founder dinner with a priority VC partner, focused on practical security and compliance challenges.",
+          "Bring together founders from one priority fund to discuss enterprise readiness, security and scaling challenges.",
       },
       {
-        title: "Platform Leader Roundtable",
+        title: "Build the VC Partner Toolkit",
         detail:
-          "Bring together a small group of platform leaders to exchange insight on helping portfolio companies become security and audit-ready.",
+          "Create practical resources platform teams can immediately share with founders, including compliance checklists, procurement guidance and educational content.",
       },
       {
-        title: "Product feedback cadence",
+        title: "Build the referral engine",
         detail:
-          "Establish a regular cadence for sharing structured product feedback gathered from founders, investors and platform teams.",
+          "Create a simple referral process with Sales so every founder introduction is tracked, measured and fed back to partners.",
       },
       {
-        title: "Partnership reporting",
+        title: "Launch Partner Insights",
         detail:
-          "Begin reporting on partner engagement, founder introductions, qualified opportunities and early programme performance.",
+          "Start a monthly update for VC partners containing founder resources, product updates and security trends.",
       },
       {
-        title: "Show up in market",
+        title: "Build the feedback loop",
         detail:
-          "Represent Vanta at the ecosystem events where priority funds, platform teams and founders are already gathering.",
+          "Create a repeatable process for sharing investor and founder insight with Product, Marketing and Sales.",
       },
     ],
     deliverables: [
-      "First partnership playbook",
-      "Two live programmes",
-      "Sales handoff process",
-      "Monthly partnership report",
+      "Founder Office Hours",
+      "Founder Dinner",
+      "VC Partner Toolkit",
+      "Referral workflow",
+      "Monthly Partner Insights",
     ],
   },
   {
     code: "03",
     range: "Days 61–90",
-    verb: "Scale",
+    verb: "Compound",
     summary:
-      "Use the evidence from the first two months to refine what works, scale the strongest programmes and build a repeatable EMEA partnership engine.",
+      "Scale what is working and build repeatable systems that make the EMEA partnerships function more valuable over time.",
     items: [
       {
-        title: "Review pilot results",
+        title: "Build the Partnership Dashboard",
         detail:
-          "Assess which partners, initiatives and referral routes are producing the strongest engagement and qualified opportunities.",
-        group: "Optimise",
+          "Create a live dashboard tracking partner engagement, founder introductions, qualified opportunities and programme performance.",
+        group: "Build",
       },
       {
-        title: "Refine scoring",
+        title: "Publish the first Partnership Report",
         detail:
-          "Refine partner segmentation and scoring using relationship strength, portfolio relevance, founder reach and pipeline potential.",
-        group: "Optimise",
+          "Share results, market insight and recommendations across the wider Vanta team.",
+        group: "Build",
       },
       {
-        title: "Regional expansion",
+        title: "Turn pilots into playbooks",
         detail:
-          "Identify the next European regions where existing relationships and market demand create the clearest expansion opportunity.",
-        group: "Optimise",
+          "Document successful programmes so they can be repeated consistently across funds and regions.",
+        group: "Build",
       },
       {
-        title: "Events calendar",
+        title: "Launch Platform Leader Roundtable",
         detail:
-          "Formalise a focused quarterly events calendar centred on the gatherings most likely to reach priority funds and relevant founders.",
+          "Bring together a small group of VC platform leaders each quarter to exchange best practice supporting portfolio companies.",
+        group: "Community",
+      },
+      {
+        title: "Expand beyond London",
+        detail:
+          "Roll out the strongest programmes into France, DACH and the Nordics, leveraging relationships already established across Europe.",
         group: "Scale",
       },
       {
-        title: "Repeatable communications",
+        title: "Present the six-month roadmap",
         detail:
-          "Build repeatable partner communications that provide useful content, portfolio support and clear opportunities for collaboration.",
+          "Use the first 90 days of relationship and pipeline data to define the next phase of Vanta's EMEA partnership strategy.",
         group: "Scale",
-      },
-      {
-        title: "Strategic relationships",
-        detail:
-          "Deepen relationships with the VC and accelerator partners demonstrating the strongest engagement and founder referral potential.",
-        group: "Scale",
-      },
-      {
-        title: "Present internally",
-        detail:
-          "Present early results, market insight and recommendations to the wider Vanta team.",
-        group: "Share insights",
-      },
-      {
-        title: "Product roadmap",
-        detail:
-          "Share recurring founder and investor feedback that could inform product, positioning and educational content.",
-        group: "Share insights",
-      },
-      {
-        title: "Next six months",
-        detail:
-          "Define the next phase of the EMEA partnership strategy, including priorities, programmes, targets and success metrics.",
-        group: "Share insights",
       },
     ],
     deliverables: [
-      "Quarterly partnership strategy",
-      "Scalable programme playbook",
-      "Metrics dashboard showing early impact",
-      "Roadmap for the next phase",
+      "Live Partnership Dashboard",
+      "Quarterly Partnership Report",
+      "Repeatable playbooks",
+      "Platform Leader Roundtable",
+      "Six-month strategy",
     ],
   },
 ];
