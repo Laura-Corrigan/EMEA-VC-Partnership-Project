@@ -1,4 +1,4 @@
-// Illustrative content only — built from public information and role understanding.
+
 
 export const flywheel = ["VCs", "Founders", "Qualified Opportunities", "Customers", "Expansion"];
 
