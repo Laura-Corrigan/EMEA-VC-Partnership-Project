@@ -17,12 +17,8 @@ export default function Home() {
       <SuccessMetrics />
       <FiveIdeas />
       <footer className="border-t border-line px-6 py-10 md:px-14">
-        <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-mono text-[11px] leading-relaxed text-mist-dim">
-            Illustrative strategy created using publicly available information and my
-            understanding of the role. Not an official Vanta document.
-          </p>
-          <a
+        <div className="mx-auto flex max-w-4xl justify-center">
+          
             href="#hero"
             className="font-mono text-[11px] uppercase tracking-wider text-mist-dim transition-colors hover:text-paper"
           >
