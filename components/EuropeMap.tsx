@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { europeRegions, type EuropeRegion } from "@/lib/data";
+import { europeRegions, europeanNetwork, type EuropeRegion } from "@/lib/data";
 import { SectionWrapper } from "./SectionWrapper";
 
 export function EuropeMap() {
@@ -12,10 +12,10 @@ export function EuropeMap() {
   return (
     <SectionWrapper
       id="europe"
-      index="02"
-      eyebrow="Beyond London"
+      index="—"
+      eyebrow="Appendix"
       title="The wider map"
-      lede="Accelerators, VCs and events worth being at — region by region."
+      lede="Not every event earns a slot — only the ones where the funds on the target list are actually in the room."
       wide
     >
       <div className="grid grid-cols-1 gap-8 md:grid-cols-5">
@@ -105,9 +105,28 @@ export function EuropeMap() {
                 <RegionList label="VCs" items={active.vcs} />
                 <RegionList label="Events" items={active.events} />
               </div>
+              {active.note && (
+                <div className="mt-6 rounded-xl border border-accent/30 bg-accent-soft px-4 py-4">
+                  <p className="font-mono text-[10px] uppercase tracking-wider text-accent">
+                    Already there
+                  </p>
+                  <p className="mt-1 text-sm leading-relaxed text-paper md:text-base">
+                    {active.note}
+                  </p>
+                </div>
+              )}
             </motion.div>
           </AnimatePresence>
         </div>
+      </div>
+
+      <div className="mt-6 rounded-xl border border-accent/30 bg-accent-soft px-5 py-4">
+        <p className="font-mono text-[10px] uppercase tracking-wider text-accent">
+          Across all of it
+        </p>
+        <p className="mt-1.5 text-sm leading-relaxed text-paper md:text-base">
+          {europeanNetwork}
+        </p>
       </div>
     </SectionWrapper>
   );

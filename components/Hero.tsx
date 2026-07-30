@@ -41,12 +41,12 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="mt-8 max-w-2xl text-lg leading-relaxed text-mist md:text-xl"
         >
-          Below: the plan, the wider map, the numbers I&apos;d hold myself to, and
-          five ways to start.
+          Below: the objective, the numbers, the plan, and five ways to
+          start — the map&apos;s in the appendix.
         </motion.p>
 
         <motion.a
-          href="#plan"
+          href="#objective"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}

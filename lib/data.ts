@@ -31,8 +31,8 @@ export const timeline: TimelinePhase[] = [
         detail: "Understand product, pain points and bottlenecks.",
       },
       {
-        title: "Internal relationships",
-        detail: "Build relationships with the internal team — understand how they want to work. Product, Marketing, Sales.",
+        title: "Internal alignment",
+        detail: "Meet Sales, Marketing, Product — find out what's already in motion so day-one network activity doesn't collide with it.",
       },
       {
         title: "Map funds",
@@ -54,7 +54,7 @@ export const timeline: TimelinePhase[] = [
       entries: [
         {
           name: "Seedcamp",
-          detail: "100 companies per portfolio. Seed stage. Captured a lot of the best of Europe. The go-to fund in London for seed.",
+          detail: "Direct LP relationship, personal contacts with the team.",
         },
         {
           name: "Balderton",
@@ -63,7 +63,7 @@ export const timeline: TimelinePhase[] = [
         {
           name: "Backed VC",
           detail:
-            "Portfolio is deep tech, not a core target. USP is events and community — 3,000+ founders. Recently ran \"FinTech Fight Club\", debates on stage, fight-club style. Different, engaging — worth partnering on something.",
+            "Direct LP relationship, co-invested on deals together. Can start this partnership day one.",
         },
         {
           name: "Cherry Ventures",
@@ -174,6 +174,7 @@ export type EuropeRegion = {
   accelerators: string[];
   vcs: string[];
   events: string[];
+  note?: string;
 };
 
 export const europeRegions: EuropeRegion[] = [
@@ -194,6 +195,7 @@ export const europeRegions: EuropeRegion[] = [
     accelerators: ["Station F", "HEC Incubateur"],
     vcs: ["Partech", "Frst", "Elaia"],
     events: ["VivaTech", "UnlockVC"],
+    note: "Direct LP relationships with Partech, Frst and Elaia, built over 3 years.",
   },
   {
     id: "dach",
@@ -203,6 +205,7 @@ export const europeRegions: EuropeRegion[] = [
     accelerators: ["APX", "Münzstraße"],
     vcs: ["HV Capital", "Point Nine", "AtlanticLabs"],
     events: ["Bits & Pretzels"],
+    note: "Direct LP relationship with AtlanticLabs, built over 3 years.",
   },
   {
     id: "nordics",
@@ -212,8 +215,12 @@ export const europeRegions: EuropeRegion[] = [
     accelerators: ["Antler Nordics", "Startup Sauna"],
     vcs: ["EQT Ventures", "Creandum", "Northzone", "Byfounders"],
     events: ["Slush"],
+    note: "Direct LP relationship with Byfounders, built over 3 years.",
   },
 ];
+
+export const europeanNetwork =
+  "Active member of Women in VC (UnlockVC) since the group started — 400+ female GPs, LPs, investors and founders across Europe. Share deal flow and market insight with the group regularly.";
 
 export type KpiTarget = {
   code: string;
@@ -227,7 +234,7 @@ export const kpiTargets: KpiTarget[] = [
     code: "01",
     milestone: "By day 30",
     metric: "25–30 funds",
-    detail: "Target list built and scored.",
+    detail: "Target list built and scored — four already live relationships.",
   },
   {
     code: "02",
@@ -294,9 +301,6 @@ export const targetedIdeas: TargetedIdea[] = [
 export const bonusIdea: TargetedIdea = {
   code: "06",
   name: "Partner with Scaling Europe",
-  pitch: "Seb Johnson is becoming the go-to media voice in European tech — newsletter and podcast read by tens of thousands of founders and investors every week. Partner on an episode or one of his live shows, if budget allows.",
+  pitch: "Newsletter and podcast reaching tens of thousands of European founders and investors every week — partner on an episode or one of his live shows, if budget allows.",
   target: "European founders and investors already listening to Scaling Europe",
 };
-
-export const postscript =
-  "I'm also training as a Pilates instructor — happy to run a session for founders sometime, no pitch attached.";

@@ -4,10 +4,11 @@ import { useEffect, useRef, useState } from "react";
 
 export const CHAPTERS = [
   { id: "hero", label: "Intro" },
-  { id: "plan", label: "The plan" },
-  { id: "europe", label: "The map" },
+  { id: "objective", label: "Objective" },
   { id: "metrics", label: "The numbers" },
+  { id: "plan", label: "The plan" },
   { id: "ideas", label: "Five ideas" },
+  { id: "europe", label: "Appendix" },
 ];
 
 export function SideRail() {

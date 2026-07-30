@@ -14,6 +14,7 @@ export function FiveIdeas() {
       index="04"
       eyebrow="Five ways in, not fifty"
       title="Targeted, not broad."
+      lede="VCs trust their network — for intros, for diligence, for everything. Having one is one thing; being one is another. First 30 days: find which channel actually creates pipeline — a dinner, an event, a free compliance session — then test it, then scale it."
       wide
     >
       <div className="flex flex-col gap-5">

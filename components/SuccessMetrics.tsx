@@ -8,7 +8,7 @@ export function SuccessMetrics() {
   return (
     <SectionWrapper
       id="metrics"
-      index="03"
+      index="02"
       eyebrow="How I'd measure this"
       title="Numbers I'd hold myself to."
       lede="A first draft — I'd adjust it once I know what's realistic against quota."

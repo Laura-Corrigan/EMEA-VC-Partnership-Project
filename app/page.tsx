@@ -1,11 +1,11 @@
 import { Hero } from "@/components/Hero";
-import { Timeline } from "@/components/Timeline";
-import { EuropeMap } from "@/components/EuropeMap";
+import { ExecSummary } from "@/components/ExecSummary";
 import { SuccessMetrics } from "@/components/SuccessMetrics";
+import { Timeline } from "@/components/Timeline";
 import { FiveIdeas } from "@/components/FiveIdeas";
+import { EuropeMap } from "@/components/EuropeMap";
 import { SideRail } from "@/components/SideRail";
 import { MobileProgress } from "@/components/MobileProgress";
-import { postscript } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -13,14 +13,18 @@ export default function Home() {
       <MobileProgress />
       <SideRail />
       <Hero />
-      <Timeline />
-      <EuropeMap />
+      <ExecSummary />
       <SuccessMetrics />
+      <Timeline />
       <FiveIdeas />
+      <EuropeMap />
 
-      <div className="border-t border-line px-6 py-14 md:px-14">
-        <p className="mx-auto max-w-xl text-center font-mono text-sm text-mist">
-          P.S. — {postscript}
+      <div className="border-t border-line px-6 py-20 md:px-14">
+        <p className="mx-auto max-w-2xl text-center font-display text-xl leading-relaxed text-paper md:text-2xl">
+          Six years watching this market. Three years working inside it.{" "}
+          <span className="italic text-accent">
+            This is the plan for pointing all of it at Vanta.
+          </span>
         </p>
       </div>
 

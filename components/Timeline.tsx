@@ -14,7 +14,7 @@ export function Timeline() {
   return (
     <SectionWrapper
       id="plan"
-      index="01"
+      index="03"
       eyebrow="30 / 60 / 90"
       title="The plan"
       lede="Three phases. Each one depends on the last actually happening."
