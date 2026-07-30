@@ -71,7 +71,7 @@ export const timeline: TimelinePhase[] = [
     summary:
       "Turn early conversations into repeatable partnership programmes that create value for founders and measurable pipeline for Vanta.",
     spotlight: {
-      label: "Potential launch partners",
+      label: "First partnerships I'd prioritise",
       entries: [
         {
           name: "Seedcamp",
