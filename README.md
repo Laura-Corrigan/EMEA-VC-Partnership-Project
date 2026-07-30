@@ -8,12 +8,6 @@ shaped around what the hiring manager said she's looking for: relationship-first
 (not salesy), comfortable with ambiguity (not a playbook role), quantitative,
 and someone who earns internal trust with Sales.
 
-**Illustrative only.** Built from publicly available information and personal
-understanding of the role. Not an official Vanta document, and not affiliated
-with or endorsed by Vanta. No employer or third-party proprietary data is used
-anywhere on this site — the KPI targets are self-proposed, forward-looking
-numbers for this role, not historical figures from any past employer.
-
 ## What's here
 
 - **The plan** — three phases (Days 1–30 "Discovery", Days 31–60 "Pilot",
