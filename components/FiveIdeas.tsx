@@ -11,10 +11,10 @@ export function FiveIdeas() {
   return (
     <SectionWrapper
       id="ideas"
-      index="03"
+      index="05"
       eyebrow="Five ways in, not fifty"
-      title="A targeted approach, not a broad one."
-      lede="Every idea here names a specific fund, founder or moment. One makes the other four possible — the rest only work once it exists."
+      title="Targeted, not broad."
+      lede="Each one names a real fund or moment. The first makes the other four possible."
       wide
     >
       <div className="flex flex-col gap-5">

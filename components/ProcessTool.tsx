@@ -13,10 +13,10 @@ export function ProcessTool() {
   return (
     <SectionWrapper
       id="process"
-      index="02"
-      eyebrow="How this actually works, day to day"
-      title="A working process — not a fixed playbook."
-      lede="The specifics change with the fund, the founder and the moment. What doesn't change is the order: trust before access, and access before any mention of Vanta."
+      index="04"
+      eyebrow="How this actually works"
+      title="A process, not a playbook."
+      lede="The specifics change fund to fund. What doesn't: trust before access, and access before Vanta ever comes up."
       wide
     >
       <div className="flex flex-col gap-10 md:flex-row md:gap-14">

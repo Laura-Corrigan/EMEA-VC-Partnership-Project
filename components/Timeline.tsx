@@ -15,9 +15,9 @@ export function Timeline() {
     <SectionWrapper
       id="plan"
       index="01"
-      eyebrow="The first 60 days"
-      title="Understand first. Build second."
-      lede="Nothing in the second phase gets shipped until the first phase is genuinely understood — the target list and first proof point in Days 31–60 depend on it. The order carries the strategy."
+      eyebrow="30 / 60 / 90"
+      title="The plan"
+      lede="Three phases. Each one depends on the last actually happening."
       wide
     >
       <div className="flex flex-col gap-10 md:flex-row md:gap-14">
@@ -72,11 +72,35 @@ export function Timeline() {
               <p className="mb-6 max-w-xl text-sm leading-relaxed text-mist md:text-base">
                 {phase.summary}
               </p>
+
+              {phase.spotlight && (
+                <div className="mb-6 rounded-xl border border-accent/30 bg-accent-soft p-5">
+                  <p className="font-mono text-[10px] uppercase tracking-wider text-accent">
+                    {phase.spotlight.label}
+                  </p>
+                  <div className="mt-3 flex flex-col gap-3">
+                    {phase.spotlight.entries.map((entry) => (
+                      <div key={entry.name}>
+                        <p className="font-display text-base text-paper">{entry.name}</p>
+                        <p className="mt-0.5 text-sm leading-relaxed text-mist">{entry.detail}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div className="divide-y divide-line rounded-xl border border-line bg-surface/40">
                 {phase.items.map((item, i) => {
                   const isOpen = openItem === i;
+                  const prevGroup = i > 0 ? phase.items[i - 1].group : undefined;
+                  const showGroupLabel = Boolean(item.group) && item.group !== prevGroup;
                   return (
                     <div key={item.title}>
+                      {showGroupLabel && (
+                        <p className="px-5 pt-4 font-mono text-[10px] uppercase tracking-wider text-mist-dim">
+                          {item.group}
+                        </p>
+                      )}
                       <button
                         onClick={() => setOpenItem(isOpen ? null : i)}
                         className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
@@ -110,6 +134,24 @@ export function Timeline() {
                   );
                 })}
               </div>
+
+              {phase.deliverables && (
+                <div className="mt-6">
+                  <p className="font-mono text-[10px] uppercase tracking-wider text-mist-dim">
+                    Deliverables
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {phase.deliverables.map((d) => (
+                      <span
+                        key={d}
+                        className="rounded-full border border-line-strong bg-surface px-3.5 py-1.5 font-mono text-xs text-paper"
+                      >
+                        {d}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </motion.div>
           </AnimatePresence>
         </div>

@@ -6,9 +6,9 @@ import "@fontsource-variable/jetbrains-mono/wght.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "EMEA Venture Partnerships — First 60 Day Strategy",
+  title: "EMEA Venture Partnerships — First 90 Days",
   description:
-    "Building Europe's highest leverage venture ecosystem for Vanta. An illustrative 60-day strategy.",
+    "Building Europe's highest leverage venture ecosystem for Vanta. An illustrative 90-day plan.",
 };
 
 export default function RootLayout({

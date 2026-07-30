@@ -5,6 +5,12 @@ export const flywheel = ["VCs", "Founders", "Qualified Opportunities", "Customer
 export type TimelineItem = {
   title: string;
   detail: string;
+  group?: string;
+};
+
+export type SpotlightEntry = {
+  name: string;
+  detail: string;
 };
 
 export type TimelinePhase = {
@@ -13,86 +19,259 @@ export type TimelinePhase = {
   verb: string;
   summary: string;
   items: TimelineItem[];
+  spotlight?: { label: string; entries: SpotlightEntry[] };
+  deliverables?: string[];
 };
 
 export const timeline: TimelinePhase[] = [
   {
     code: "01",
     range: "Days 1–30",
-    verb: "Understand",
-    summary:
-      "Sit inside the machine before touching it. Learn how Vanta actually sells, ships and supports before proposing how VCs should plug in.",
+    verb: "Discovery",
+    summary: "Understand the product and the people before proposing anything to anyone external.",
     items: [
       {
-        title: "Product & platform",
-        detail:
-          "Work through the frameworks (SOC 2, ISO 27001, GDPR, HIPAA) and the AI Agent workflow well enough to explain them to a platform team unprompted.",
+        title: "Understand product",
+        detail: "Understand product, pain points and bottlenecks.",
       },
       {
-        title: "Sales motion",
-        detail:
-          "Shadow AEs on enterprise and mid-market calls to see where compliance readiness accelerates or stalls a deal.",
+        title: "Internal relationships",
+        detail: "Build relationships with the internal team — understand how they want to work. Product, Marketing, Sales.",
       },
       {
-        title: "Marketing calendar",
-        detail:
-          "Map existing content, VantaCon and regional events already in flight so new programmes extend rather than collide.",
+        title: "Map funds",
+        detail: "25–30 funds mapped.",
       },
       {
-        title: "Customer Success handoffs",
-        detail:
-          "Understand how expansion and renewal signals are currently tracked, to design partner-sourced accounts into the same system.",
-      },
-      {
-        title: "Existing partner network",
-        detail:
-          "Audit every live VC, accelerator and platform relationship in EMEA — what's active, what's dormant, what's undocumented.",
-      },
-      {
-        title: "Current pipeline",
-        detail:
-          "Pull every deal in the last two quarters with a fund or accelerator in its history to find the real (not assumed) influence pattern.",
-      },
-      {
-        title: "Regional ecosystem",
-        detail:
-          "Build a first map of the UK, France, DACH, Nordics, Benelux and Southern Europe venture landscape from public sources and internal knowledge.",
+        title: "VC discovery meetings",
+        detail: "Begin VC discovery meetings.",
       },
     ],
   },
   {
     code: "02",
     range: "Days 31–60",
-    verb: "Build",
-    summary:
-      "Turn the map into a working system: a short, ranked target list, a first proof point with a real fund, and a way to show it's working.",
+    verb: "Pilot",
+    summary: "Two programmes, run properly. Starting in London.",
+    spotlight: {
+      label: "Starting in London",
+      entries: [
+        {
+          name: "Seedcamp",
+          detail: "100 companies per portfolio. Seed stage. Captured a lot of the best of Europe. The go-to fund in London for seed.",
+        },
+        {
+          name: "Balderton",
+          detail: "Full GTM and platform team supporting their portfolio — heavy on marketing.",
+        },
+        {
+          name: "Backed VC",
+          detail:
+            "Portfolio is deep tech, not a core target. USP is events and community — 3,000+ founders. Recently ran \"FinTech Fight Club\", debates on stage, fight-club style. Different, engaging — worth partnering on something.",
+        },
+        {
+          name: "Cherry Ventures",
+          detail:
+            "Just opened an office in Fitzrovia. Want to build more of their London presence. Portfolio is AI companies selling to enterprise.",
+        },
+      ],
+    },
     items: [
       {
-        title: "Tier-one target map",
-        detail:
-          "Ship the ranked list of 20–30 priority funds with a named warm path into each one — see idea 01 below.",
+        title: "Founder Compliance Office Hours",
+        detail: "Monthly, invite-only, for founders close to their first audit or enterprise deal.",
       },
       {
-        title: "First proof point",
-        detail:
-          "Run one dinner or office-hours session with a single flagship fund, end to end, before scaling the format anywhere else.",
+        title: "Founder dinner",
+        detail: "Invite-only founder dinner with a partner VC.",
       },
       {
-        title: "Champion referral loop",
-        detail:
-          "Identify the first 5–10 VC-backed customers worth asking for a warm introduction, and make the first asks.",
+        title: "Platform Leader Roundtable",
+        detail: "2–3 platform leads, trading notes on getting portfolios audit-ready.",
       },
       {
-        title: "Reporting baseline",
-        detail:
-          "Stand up a simple weekly tracker for intros, meetings and pipeline touched — so the next 30 days are measurable from day one.",
+        title: "Product feedback cadence",
+        detail: "Regular cadence for sharing Product feedback from founders and VCs.",
       },
       {
-        title: "Internal socialisation",
-        detail:
-          "Walk Sales, Marketing and Customer Success through the plan and the target list so handoffs are defined before volume arrives.",
+        title: "Partnership reporting",
+        detail: "Start reporting on partnership metrics.",
+      },
+      {
+        title: "Deepen, don't spread",
+        detail: "Deepen engagement with top-priority partners, rather than trying to meet everyone.",
+      },
+      {
+        title: "Show up in market",
+        detail: "Attend relevant ecosystem events, represent Vanta in the market.",
       },
     ],
+    deliverables: [
+      "First partnership playbook",
+      "Two live programmes",
+      "Sales handoff process",
+      "Monthly partnership report",
+    ],
+  },
+  {
+    code: "03",
+    range: "Days 61–90",
+    verb: "Scale",
+    summary: "Turn what worked into repeatable programmes. Share what we've learned.",
+    items: [
+      {
+        title: "Review pilot results",
+        detail: "Double down on the highest-performing initiatives.",
+        group: "Optimise",
+      },
+      {
+        title: "Refine scoring",
+        detail: "Refine partner segmentation and scoring.",
+        group: "Optimise",
+      },
+      {
+        title: "Regional expansion",
+        detail: "Identify opportunities to expand into additional European regions.",
+        group: "Optimise",
+      },
+      {
+        title: "Events calendar",
+        detail: "Formalise a quarterly events calendar.",
+        group: "Scale",
+      },
+      {
+        title: "Repeatable comms",
+        detail: "Build repeatable partner communications.",
+        group: "Scale",
+      },
+      {
+        title: "Strategic relationships",
+        detail: "Strengthen relationships with strategic VC and accelerator partners.",
+        group: "Scale",
+      },
+      {
+        title: "Present internally",
+        detail: "Present learnings internally.",
+        group: "Share insights",
+      },
+      {
+        title: "Product roadmap",
+        detail: "Recommend roadmap improvements based on founder feedback.",
+        group: "Share insights",
+      },
+      {
+        title: "Next six months",
+        detail: "Define success metrics for the next six months.",
+        group: "Share insights",
+      },
+    ],
+    deliverables: [
+      "Quarterly partnership strategy",
+      "Scalable programme playbook",
+      "Metrics dashboard showing early impact",
+      "Roadmap for the next phase",
+    ],
+  },
+];
+
+export type EuropeRegion = {
+  id: string;
+  name: string;
+  cx: number;
+  cy: number;
+  accelerators: string[];
+  vcs: string[];
+  events: string[];
+};
+
+export const europeRegions: EuropeRegion[] = [
+  {
+    id: "uk",
+    name: "UK",
+    cx: 168,
+    cy: 118,
+    accelerators: ["Entrepreneur First", "Founders Factory"],
+    vcs: ["LocalGlobe", "Episode 1", "Index Ventures"],
+    events: ["SaaStock", "London Tech Week"],
+  },
+  {
+    id: "france",
+    name: "France",
+    cx: 210,
+    cy: 200,
+    accelerators: ["Station F", "HEC Incubateur"],
+    vcs: ["Partech", "Alven", "Elaia"],
+    events: ["VivaTech"],
+  },
+  {
+    id: "dach",
+    name: "DACH",
+    cx: 290,
+    cy: 150,
+    accelerators: ["APX", "Merantix"],
+    vcs: ["HV Capital", "Point Nine"],
+    events: ["Bits & Pretzels"],
+  },
+  {
+    id: "nordics",
+    name: "Nordics",
+    cx: 320,
+    cy: 60,
+    accelerators: ["Antler Nordics", "Startup Sauna"],
+    vcs: ["EQT Ventures", "Creandum", "Northzone"],
+    events: ["Slush"],
+  },
+  {
+    id: "netherlands",
+    name: "Netherlands",
+    cx: 240,
+    cy: 130,
+    accelerators: ["Rockstart", "Antler Amsterdam"],
+    vcs: ["Peak Capital", "Prime Ventures"],
+    events: ["TNW Conference"],
+  },
+  {
+    id: "southern",
+    name: "Southern Europe",
+    cx: 180,
+    cy: 280,
+    accelerators: ["Lanzadera", "Conector"],
+    vcs: ["Kibo Ventures", "United Ventures", "Indico Capital"],
+    events: ["South Summit", "Web Summit"],
+  },
+];
+
+export type KpiTarget = {
+  code: string;
+  milestone: string;
+  metric: string;
+  detail: string;
+};
+
+export const kpiTargets: KpiTarget[] = [
+  {
+    code: "01",
+    milestone: "By day 30",
+    metric: "25–30 funds",
+    detail: "Target list built and scored.",
+  },
+  {
+    code: "02",
+    milestone: "By day 60",
+    metric: "15+ relationships",
+    detail: "Funds in regular contact, plus two live programmes run end to end.",
+  },
+  {
+    code: "03",
+    milestone: "Ongoing, quarterly",
+    metric: "10+ introductions",
+    detail: "Founder introductions from live fund relationships.",
+  },
+  {
+    code: "04",
+    milestone: "Ongoing, quarterly",
+    metric: "4–6 opportunities",
+    detail: "Qualified opportunities handed to Sales.",
   },
 ];
 
@@ -108,34 +287,30 @@ export const processStages: ProcessStage[] = [
   {
     code: "01",
     name: "Earn the right in",
-    behavior:
-      "Learn a fund's portfolio, thesis and where compliance is a genuine unlock before ever reaching out — arrive with a specific, researched reason to talk.",
-    avoid: "Open with a pitch for \"Vanta's VC partner programme.\"",
-    signal: "The platform lead replies to the second email, not just the first.",
+    behavior: "Know a fund's portfolio and thesis before reaching out. Have a real reason to talk.",
+    avoid: "Open with a pitch for a partner programme.",
+    signal: "The platform lead replies to the second email.",
   },
   {
     code: "02",
-    name: "Build the relationship, not the pipeline",
-    behavior:
-      "Stay useful on a cadence with no ask attached — market intel, a genuinely relevant introduction, a straight answer to a hard question.",
-    avoid: "Log every interaction as a stage toward a close.",
-    signal: "They start looping me into things I wasn't invited to.",
+    name: "Build the relationship",
+    behavior: "Stay useful with no ask attached — intel, a good intro, a straight answer.",
+    avoid: "Log every chat as a stage toward a close.",
+    signal: "They loop me into things I wasn't invited to.",
   },
   {
     code: "03",
     name: "Recognise the real moment",
-    behavior:
-      "Notice, alongside the fund, when a specific founder is actually approaching an enterprise deal or first audit — then make the introduction because it helps the founder, not because it hits a number.",
-    avoid: "Force an introduction before the need is real.",
-    signal: "The founder thanks the fund for the intro, not me.",
+    behavior: "Notice when a founder is actually close to an audit or enterprise deal. Introduce because it helps them.",
+    avoid: "Force an intro before the need is real.",
+    signal: "The founder thanks the fund.",
   },
   {
     code: "04",
     name: "Bring Sales in as a peer",
-    behavior:
-      "Hand context to the right AE personally, before the founder ever fills out a form, so the account starts warm.",
-    avoid: "Drop a lead record over the wall and move on.",
-    signal: "Sales starts asking what's in the pipeline before I've told them.",
+    behavior: "Hand context to the right AE personally, before the founder fills out a form.",
+    avoid: "Drop a lead record over the wall.",
+    signal: "Sales asks what's in the pipeline before I've told them.",
   },
 ];
 
@@ -153,62 +328,51 @@ export const targetedIdeas: TargetedIdea[] = [
   {
     code: "01",
     name: "Tier-one target map",
-    pitch:
-      "A ranked list of 20–30 EMEA funds most likely to produce enterprise-ready founders — starting with names like Seedcamp, Cherry Ventures and EQT Ventures, each mapped to its warmest path in before any outreach starts.",
-    target: "Priority-tier VC platform teams across the UK, DACH and the Nordics",
-    approach:
-      "Account-based mapping, not a newsletter blast. Every fund gets a specific, researched reason for the conversation — existing customer overlap, portfolio stage, or a live deal already in motion.",
-    outcome:
-      "The foundation everything else runs on: no dinner, office hour or intro request happens without a fund's place on this list first.",
+    pitch: "25–30 funds, ranked. Starting in London with Seedcamp, Balderton, Backed VC and Cherry Ventures.",
+    target: "Priority-tier VC platform teams, London first",
+    approach: "Specific reasons for each fund — portfolio stage, existing overlap, or a live deal already moving.",
+    outcome: "Everything else here depends on this list existing first.",
     featured: true,
   },
   {
     code: "02",
     name: "Champion-led referral loop",
-    pitch:
-      "Ask existing VC-backed customers — the ones already getting real value from Vanta — for a warm introduction to their own investor's platform team.",
-    target: "VC-backed customers who are strong references",
-    approach:
-      "Turns Customer Success into a partner-sourcing motion, one relationship at a time, instead of a cold platform-team contact.",
-    outcome: "Every introduction arrives pre-vouched for, and converts to a first meeting far faster than outbound.",
+    pitch: "Ask existing VC-backed customers for a warm intro to their own investor's platform team.",
+    target: "VC-backed customers who'd give a strong reference",
+    approach: "Customer Success asks, not Partnerships cold-emailing a platform team.",
+    outcome: "Every intro arrives pre-vouched for.",
   },
   {
     code: "03",
     name: "Curated founder dinners",
-    pitch:
-      "Small, invite-only dinners — 8 to 10 founders — piloted with a single portfolio (Cherry Ventures in Berlin, or LocalGlobe in London) before extending anywhere else, themed around one real compliance moment.",
-    target: "Series A–B founders inside 3–5 flagship fund relationships",
-    approach: "Depth over breadth: one fund, one dinner, one clear follow-up ask — not a broad networking event.",
-    outcome: "A small number of high-trust introductions, not a long list of low-intent contacts.",
+    pitch: "8–10 founders, one dinner, one fund's portfolio — starting with Balderton in London.",
+    target: "Series A–B founders inside 3–5 flagship funds",
+    approach: "One fund, one dinner, one follow-up ask.",
+    outcome: "A handful of high-trust intros.",
   },
   {
     code: "04",
     name: "Platform playbook",
-    pitch:
-      "A short, co-branded \"get your portfolio audit-ready\" playbook, built with 2–3 platform leads at firms such as Balderton, Index Ventures or Point Nine, that they can hand to every founder they back.",
-    target: "Platform team leads at 5–8 top-tier funds",
-    approach: "One build, distributed by the fund itself — reach compounds inside their own portfolio without repeated outreach.",
-    outcome: "Vanta becomes the default answer before a founder even starts searching.",
+    pitch: "A short \"get audit-ready\" playbook, built with 2–3 platform leads — Seedcamp and Balderton first.",
+    target: "Platform leads at 5–8 top-tier funds",
+    approach: "One build, distributed by the fund itself.",
+    outcome: "Vanta's the default answer before a founder starts searching.",
   },
   {
     code: "05",
     name: "Compliance fast-track hours",
-    pitch:
-      "Monthly, invite-only office hours for founders sourced through accelerator portfolios like Entrepreneur First and Station F, approaching their first enterprise deal or first audit.",
-    target: "Founders 3–6 months from needing SOC 2 or ISO 27001",
-    approach: "Timed to the moment it actually matters, not run as a generic ongoing series open to anyone.",
-    outcome: "Converts real, present urgency into qualified pipeline — measurable in weeks, not quarters.",
+    pitch: "Monthly office hours for founders close to their first audit or enterprise deal — starting with Cherry Ventures' AI portfolio, already selling into enterprise.",
+    target: "Founders 3–6 months out from SOC 2 or ISO 27001",
+    approach: "Timed to the moment it matters.",
+    outcome: "Turns real urgency into pipeline.",
   },
 ];
 
 export const bonusIdea: TargetedIdea = {
   code: "06",
-  name: "Sponsor Scaling Europe",
-  pitch:
-    "Sponsor Seb Johnson's Scaling Europe — the newsletter, podcast and live shows read by tens of thousands of European founders and investors every week — if paid sponsorship budget allows.",
-  target: "European founders and investors already following Scaling Europe",
-  approach:
-    "Follows a precedent the show has already set with Deel, Mishcon, Chargebee, SurrealDB and Airwallex — a visible, recurring placement in front of exactly the audience the five ideas above are reaching one relationship at a time.",
-  outcome:
-    "Broader brand permission sitting behind the targeted plays — pursued only once sponsorship budget is confirmed, not funded out of the core relationship-building budget.",
+  name: "Partner with Scaling Europe",
+  pitch: "Seb Johnson is becoming the go-to media voice in European tech — newsletter and podcast read by tens of thousands of founders and investors every week. Partner on an episode or one of his live shows, if budget allows.",
+  target: "European founders and investors already listening to Scaling Europe",
+  approach: "Deel presents the show; Mishcon, Chargebee, SurrealDB and Airwallex have all partnered on it already — same audience the five ideas above reach one relationship at a time.",
+  outcome: "Broader visibility behind the targeted work — only once sponsorship budget is confirmed, separate from the relationship-building budget.",
 };

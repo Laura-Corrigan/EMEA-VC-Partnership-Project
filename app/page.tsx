@@ -1,5 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { Timeline } from "@/components/Timeline";
+import { EuropeMap } from "@/components/EuropeMap";
+import { SuccessMetrics } from "@/components/SuccessMetrics";
 import { ProcessTool } from "@/components/ProcessTool";
 import { FiveIdeas } from "@/components/FiveIdeas";
 import { SideRail } from "@/components/SideRail";
@@ -12,6 +14,8 @@ export default function Home() {
       <SideRail />
       <Hero />
       <Timeline />
+      <EuropeMap />
+      <SuccessMetrics />
       <ProcessTool />
       <FiveIdeas />
       <footer className="border-t border-line px-6 py-10 md:px-14">

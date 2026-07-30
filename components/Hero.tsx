@@ -22,7 +22,7 @@ export function Hero() {
         >
           <span className="h-1.5 w-1.5 rounded-full bg-mint animate-pulse-slow" />
           <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-mist">
-            EMEA Venture Partnerships · First 60 Days
+            EMEA Venture Partnerships · First 90 Days
           </span>
         </motion.div>
 
@@ -42,9 +42,8 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="mt-8 max-w-2xl text-lg leading-relaxed text-mist md:text-xl"
         >
-          Three things below: a 60-day plan, the process behind it — trust before
-          access, always — and five specific ways to start, grounded in the funds
-          and accelerators already shaping this ecosystem.
+          Below: the plan, the numbers I&apos;d hold myself to, how I&apos;d actually
+          work it, and five ways to start.
         </motion.p>
 
         <motion.div
