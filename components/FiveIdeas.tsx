@@ -14,7 +14,6 @@ export function FiveIdeas() {
       index="04"
       eyebrow="Five ways in, not fifty"
       title="Targeted, not broad."
-      lede="Each one names a real fund or moment. The first makes the other four possible."
       wide
     >
       <div className="flex flex-col gap-5">
@@ -91,10 +90,8 @@ function IdeaCard({
         {idea.pitch}
       </p>
 
-      <div className={`mt-6 grid gap-x-6 gap-y-4 ${large || conditional ? "sm:grid-cols-3" : "grid-cols-1"}`}>
+      <div className="mt-6">
         <Field label="Targeted at" value={idea.target} />
-        <Field label="Why it's targeted" value={idea.approach} />
-        <Field label="What it earns" value={idea.outcome} />
       </div>
     </motion.div>
   );
