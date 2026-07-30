@@ -17,7 +17,7 @@ export function Timeline() {
       id="plan"
       index="04"
       eyebrow="30 / 60 / 90"
-      title="What I’ll ship in my first 90 days"
+      title="The first 90 days"
       lede="A plan built around tangible outputs: activate relationships, launch programmes and build the systems that make partnerships scalable."
       wide
     >
