@@ -210,7 +210,7 @@ export const europeRegions: EuropeRegion[] = [
     vcs: ["LocalGlobe", "Episode 1", "Seedcamp", "Cherry Ventures"],
     events: ["Scaling Europe", "Mountside Ventures"],
     note:
-      "Direct LP relationship with Seedcamp, Cherry Ventures and Entrepreneur First.",
+      "Direct LP relationship with funds such as Seedcamp, Cherry Ventures, Entrepreneur First and 15 more, my career has been building partnerships with VC's, accelerators and key ecosystem people across London, the UK and Europe for 6 years.",
   },
   {
     id: "france",
