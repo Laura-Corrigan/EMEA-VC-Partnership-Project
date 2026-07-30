@@ -20,7 +20,10 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{
+            duration: 0.7,
+            ease: [0.16, 1, 0.3, 1],
+          }}
           className="mb-8 inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface/60 px-4 py-1.5 backdrop-blur-sm"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-mint animate-pulse-slow" />
@@ -57,9 +60,10 @@ export function Hero() {
         >
           Six years embedded in the European venture ecosystem, including three
           years investing in venture capital, have given me relationships
-          across many of the firms Vanta wants to partner with—from Seedcamp
-          and Balderton to Cherry Ventures. This is my plan for turning those
-          relationships into a high-quality founder pipeline.
+          across many of Europe's leading seed funds—including Seedcamp,
+          Balderton and Cherry Ventures. Below is the network I would activate,
+          and my plan for turning those relationships into qualified founder
+          pipeline for Vanta.
         </motion.p>
 
         <motion.a
@@ -69,7 +73,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-16 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-mist-dim transition-colors hover:text-paper"
         >
-          Explore my network <ArrowDown className="h-3.5 w-3.5" />
+          See the network <ArrowDown className="h-3.5 w-3.5" />
         </motion.a>
       </div>
     </section>
