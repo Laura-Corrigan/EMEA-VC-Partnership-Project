@@ -17,7 +17,7 @@ export function Timeline() {
       index="03"
       eyebrow="30 / 60 / 90"
       title="The plan"
-      lede="Three phases. Each one depends on the last actually happening."
+      lede="Three phases."
       wide
     >
       <div className="flex flex-col gap-10 md:flex-row md:gap-14">

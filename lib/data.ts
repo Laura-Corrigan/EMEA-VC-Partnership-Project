@@ -63,7 +63,7 @@ export const timeline: TimelinePhase[] = [
         {
           name: "Backed VC",
           detail:
-            "Direct LP relationship, co-invested on deals together. Can start this partnership day one.",
+            "Direct LP relationship, co-invested on deals together. Can start this partnership day one — plus a 3,000+ founder community built through their events programme.",
         },
         {
           name: "Cherry Ventures",
@@ -186,6 +186,7 @@ export const europeRegions: EuropeRegion[] = [
     accelerators: ["Entrepreneur First", "Founders Factory"],
     vcs: ["LocalGlobe", "Episode 1", "Seedcamp", "Cherry Ventures"],
     events: ["Scaling Europe", "Mountside Ventures"],
+    note: "Direct LP relationship with Seedcamp, Cherry Ventures and Entrepreneur First.",
   },
   {
     id: "france",
