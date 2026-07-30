@@ -55,11 +55,6 @@ export function Hero() {
           Scroll to begin <ArrowDown className="h-3.5 w-3.5" />
         </motion.a>
       </div>
-
-      <p className="relative mx-auto mt-24 max-w-5xl border-t border-line pt-6 font-mono text-[11px] leading-relaxed text-mist-dim">
-        Illustrative strategy created using publicly available information and my
-        understanding of the role. Not an official Vanta document.
-      </p>
     </section>
   );
 }
