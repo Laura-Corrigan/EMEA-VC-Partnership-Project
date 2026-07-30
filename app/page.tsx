@@ -12,12 +12,13 @@ export default function Home() {
     <main className="relative">
       <MobileProgress />
       <SideRail />
+
       <Hero />
+      <EuropeMap />
       <ExecSummary />
       <SuccessMetrics />
       <Timeline />
       <FiveIdeas />
-      <EuropeMap />
 
       <div className="border-t border-line px-6 py-20 md:px-14">
         <p className="mx-auto max-w-2xl text-center font-display text-xl leading-relaxed text-paper md:text-2xl">
