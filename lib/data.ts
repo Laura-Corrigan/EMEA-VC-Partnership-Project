@@ -1,5 +1,3 @@
-
-
 export const flywheel = ["VCs", "Founders", "Qualified Opportunities", "Customers", "Expansion"];
 
 export type TimelineItem = {
@@ -273,7 +271,7 @@ export const targetedIdeas: TargetedIdea[] = [
     name: "Tier-one target map",
     pitch: "25–30 funds, ranked. Starting in London with Seedcamp, Balderton, Backed VC and Cherry Ventures.",
     target: "Priority-tier VC platform teams, London first",
-    approach: "Specific reasons for each fund: portfolio stage, existing overlap, or a live deal already moving.",
+    approach: "Specific reasons for each fund — portfolio stage, existing overlap, or a live deal already moving.",
     outcome: "Everything else here depends on this list existing first.",
     featured: true,
   },
@@ -282,24 +280,32 @@ export const targetedIdeas: TargetedIdea[] = [
     name: "Champion-led referral loop",
     pitch: "Ask existing VC-backed customers for a warm intro to their own investor's platform team.",
     target: "VC-backed customers who'd give a strong reference",
+    approach: "Customer Success asks, not Partnerships cold-emailing a platform team.",
+    outcome: "Every intro arrives pre-vouched for.",
   },
   {
     code: "03",
     name: "Curated founder dinners",
-    pitch: "8–10 founders, one dinner, one fund's portfolio, starting with Balderton in London.",
+    pitch: "8–10 founders, one dinner, one fund's portfolio — starting with Balderton in London.",
     target: "Series A–B founders inside 3–5 flagship funds",
+    approach: "One fund, one dinner, one follow-up ask.",
+    outcome: "A handful of high-trust intros.",
   },
   {
     code: "04",
     name: "Platform playbook",
     pitch: "A short \"get audit-ready\" playbook, built with 2–3 platform leads — Seedcamp and Balderton first.",
     target: "Platform leads at 5–8 top-tier funds",
+    approach: "One build, distributed by the fund itself.",
+    outcome: "Vanta's the default answer before a founder starts searching.",
   },
   {
     code: "05",
     name: "Compliance fast-track hours",
     pitch: "Monthly office hours for founders close to their first audit or enterprise deal — starting with Cherry Ventures' AI portfolio, already selling into enterprise.",
     target: "Founders 3–6 months out from SOC 2 or ISO 27001",
+    approach: "Timed to the moment it matters.",
+    outcome: "Turns real urgency into pipeline.",
   },
 ];
 
@@ -307,4 +313,7 @@ export const bonusIdea: TargetedIdea = {
   code: "06",
   name: "Partner with Scaling Europe",
   pitch: "Seb Johnson is becoming the go-to media voice in European tech — newsletter and podcast read by tens of thousands of founders and investors every week. Partner on an episode or one of his live shows, if budget allows.",
+  target: "European founders and investors already listening to Scaling Europe",
+  approach: "Deel presents the show; Mishcon, Chargebee, SurrealDB and Airwallex have all partnered on it already — same audience the five ideas above reach one relationship at a time.",
+  outcome: "Broader visibility behind the targeted work — only once sponsorship budget is confirmed, separate from the relationship-building budget.",
 };
