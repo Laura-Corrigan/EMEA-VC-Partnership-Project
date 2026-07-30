@@ -1,12 +1,18 @@
 # EMEA Venture Partnerships — First 90 Days
 
 A single-page interactive tool built around four things: a 30/60/90 plan, the
-numbers proposed for the role, the working process behind it, and five
+numbers proposed for the role, a map of the wider ecosystem, and five
 targeted ideas grounded in specific, real funds and accelerators. Built for a
 Strategic Venture Capital Partnerships Manager (EMEA) application at Vanta,
 shaped around what the hiring manager said she's looking for: relationship-first
 (not salesy), comfortable with ambiguity (not a playbook role), quantitative,
 and someone who earns internal trust with Sales.
+
+**Illustrative only.** Built from publicly available information and personal
+understanding of the role. Not an official Vanta document, and not affiliated
+with or endorsed by Vanta. No employer or third-party proprietary data is used
+anywhere on this site — the KPI targets are self-proposed, forward-looking
+numbers for this role, not historical figures from any past employer.
 
 ## What's here
 
@@ -20,10 +26,6 @@ and someone who earns internal trust with Sales.
 - **The numbers** — four forward-looking KPI targets tied to the plan's own
   milestones (day 30, day 60, then an ongoing quarterly cadence), proposed as
   a first draft to be refined once inside the building.
-- **The process** — a 4-stage stepper showing how a relationship actually
-  becomes a customer: what I do, what I deliberately don't do, and how I'd know
-  it's working at each stage. The direct answer to "not salesy" and "not a
-  playbook."
 - **Five targeted ideas** — one foundational idea (the target list) and four
   execution ideas that depend on it, each naming the specific funds and
   accelerators it starts with (Seedcamp, Cherry Ventures, Balderton, Entrepreneur
@@ -47,7 +49,7 @@ and data. The signature motif is an animated node-and-line "trust graph"
 (`components/ConstellationBackground.tsx`) behind the hero, echoed as the
 connecting line in the left-hand chapter rail.
 
-All copy — the plan, the KPI targets, the process stages, and the five ideas —
+All copy — the plan, the map, the KPI targets, and the five ideas —
 lives in `lib/data.ts`. Edit that file to change any wording without touching
 component code.
 
@@ -88,10 +90,9 @@ components/
   Timeline.tsx               interactive 30/60/90 plan (phase tabs + accordion)
   EuropeMap.tsx               hoverable map of accelerators/VCs/events by region
   SuccessMetrics.tsx          the four forward-looking KPI targets
-  ProcessTool.tsx             the 4-stage relationship-first process stepper
   FiveIdeas.tsx               the five targeted ideas + one bonus idea
   SectionWrapper.tsx          shared numbering / eyebrow / scroll-reveal shell
   ConstellationBackground     canvas trust-graph animation
   SideRail / MobileProgress   chapter navigation (desktop / mobile)
-lib/data.ts           All copy for the plan, KPIs, process and ideas — edit here
+lib/data.ts           All copy for the plan, map, KPIs and ideas — edit here
 ```

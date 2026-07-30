@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ConstellationBackground } from "./ConstellationBackground";
-import { flywheel } from "@/lib/data";
 import { ArrowDown } from "lucide-react";
 
 export function Hero() {
@@ -42,34 +41,16 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="mt-8 max-w-2xl text-lg leading-relaxed text-mist md:text-xl"
         >
-          Below: the plan, the numbers I&apos;d hold myself to, how I&apos;d actually
-          work it, and five ways to start.
+          Below: the plan, the wider map, the numbers I&apos;d hold myself to, and
+          five ways to start.
         </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-16 flex flex-wrap items-center gap-3 md:gap-4"
-        >
-          {flywheel.map((step, i) => (
-            <div key={step} className="flex items-center gap-3 md:gap-4">
-              <span className="rounded-full border border-line-strong bg-surface px-4 py-2 font-mono text-xs md:text-sm text-paper">
-                {step}
-              </span>
-              {i < flywheel.length - 1 && (
-                <span className="text-accent/70 select-none">→</span>
-              )}
-            </div>
-          ))}
-        </motion.div>
 
         <motion.a
           href="#plan"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-20 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-mist-dim transition-colors hover:text-paper"
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-16 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-mist-dim transition-colors hover:text-paper"
         >
           Scroll to begin <ArrowDown className="h-3.5 w-3.5" />
         </motion.a>

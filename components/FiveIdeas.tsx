@@ -11,7 +11,7 @@ export function FiveIdeas() {
   return (
     <SectionWrapper
       id="ideas"
-      index="05"
+      index="04"
       eyebrow="Five ways in, not fifty"
       title="Targeted, not broad."
       lede="Each one names a real fund or moment. The first makes the other four possible."

@@ -1,5 +1,3 @@
-export const flywheel = ["VCs", "Founders", "Qualified Opportunities", "Customers", "Expansion"];
-
 export type TimelineItem = {
   title: string;
   detail: string;

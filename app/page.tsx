@@ -2,7 +2,6 @@ import { Hero } from "@/components/Hero";
 import { Timeline } from "@/components/Timeline";
 import { EuropeMap } from "@/components/EuropeMap";
 import { SuccessMetrics } from "@/components/SuccessMetrics";
-import { ProcessTool } from "@/components/ProcessTool";
 import { FiveIdeas } from "@/components/FiveIdeas";
 import { SideRail } from "@/components/SideRail";
 import { MobileProgress } from "@/components/MobileProgress";
@@ -16,7 +15,6 @@ export default function Home() {
       <Timeline />
       <EuropeMap />
       <SuccessMetrics />
-      <ProcessTool />
       <FiveIdeas />
       <footer className="border-t border-line px-6 py-10 md:px-14">
         <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">

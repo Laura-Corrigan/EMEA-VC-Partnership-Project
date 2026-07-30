@@ -7,7 +7,6 @@ export const CHAPTERS = [
   { id: "plan", label: "The plan" },
   { id: "europe", label: "The map" },
   { id: "metrics", label: "The numbers" },
-  { id: "process", label: "The process" },
   { id: "ideas", label: "Five ideas" },
 ];
 
