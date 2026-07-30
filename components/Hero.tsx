@@ -60,7 +60,7 @@ export function Hero() {
         >
           Six years embedded in the European venture ecosystem, including three
           years investing in venture capital, have given me relationships
-          across many of Europe's leading seed funds—including Seedcamp,
+          across many of Europe's leading seed funds including Seedcamp,
           Balderton and Cherry Ventures. Below is the network I would activate,
           and my plan for turning those relationships into qualified founder
           pipeline for Vanta.
