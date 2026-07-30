@@ -11,7 +11,8 @@ export function SuccessMetrics() {
       index="03"
       eyebrow="How I'd measure this"
       title="Numbers I'd hold myself to."
-      lede="A first draft — I'd adjust it once I know what's realistic against quota. 
+      lede="A first draft — I'd adjust it once I know what's realistic against quota. What matters is committing to numbers, not just activity."
+      wide
     >
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {kpiTargets.map((kpi, i) => (
