@@ -22,7 +22,7 @@ export function EuropeMap() {
       index="01"
       eyebrow="European VC network"
       title="A network I can activate from day one"
-      lede="Six years working across the European venture ecosystem has given me direct relationships with fund managers, platform teams, accelerators and investor communities across the region. This map shows where I already have a route in, not a cold target list."
+      lede="Six years working across the European venture ecosystem has given me direct relationships with fund managers, platform teams, accelerators and investor communities across the region. This map shows examples of where I already have a route in, not a cold target list."
       wide
     >
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
