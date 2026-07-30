@@ -51,7 +51,7 @@ export const timeline: TimelinePhase[] = [
           "Shadow sales calls, onboarding and customer conversations to understand where compliance becomes a blocker and identify opportunities where VC partners can add value.",
       },
       {
-        title: "Ship the first market insight",
+        title: "Market insight",
         detail:
           "Publish an internal report summarising investor conversations, founder pain points and recommendations for Product, Sales and Marketing.",
       },
