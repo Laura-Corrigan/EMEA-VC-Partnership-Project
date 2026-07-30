@@ -1,9 +1,9 @@
 import { Hero } from "@/components/Hero";
+import { EuropeMap } from "@/components/EuropeMap";
 import { ExecSummary } from "@/components/ExecSummary";
 import { SuccessMetrics } from "@/components/SuccessMetrics";
 import { Timeline } from "@/components/Timeline";
 import { FiveIdeas } from "@/components/FiveIdeas";
-import { EuropeMap } from "@/components/EuropeMap";
 import { SideRail } from "@/components/SideRail";
 import { MobileProgress } from "@/components/MobileProgress";
 
