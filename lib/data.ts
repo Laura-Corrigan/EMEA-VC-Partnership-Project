@@ -76,22 +76,22 @@ export const timeline: TimelinePhase[] = [
         {
           name: "Seedcamp",
           detail:
-            "Launch the first founder programme with an existing relationship.",
+            "Existing LP relationship and regular interaction with the team through fund reporting, portfolio updates and industry events, creating an immediate route into one of Europe's strongest seed portfolios",
         },
         {
-          name: "Balderton",
+          name: "Crane Ventures",
           detail:
-            "Work closely with the platform team to support portfolio founders.",
+            "Established relationships across the investment and platform teams, with a mature portfolio support function that makes them an ideal launch partner for founder education and referrals.",
         },
         {
           name: "Backed VC",
           detail:
-            "Build on an existing LP relationship and previous co-investment experience.",
+            "Existing LP relationship and previous co-investment experience provide a strong foundation for building founder programmes and referral pathways from day one..",
         },
         {
           name: "Cherry Ventures",
           detail:
-            "Support founders across AI and enterprise software through existing relationships.",
+            "Existing relationship with the London team and strong overlap across AI and enterprise software founders",
         },
       ],
     },
@@ -99,12 +99,12 @@ export const timeline: TimelinePhase[] = [
       {
         title: "Launch Founder Compliance Office Hours",
         detail:
-          "Pilot monthly office hours with one or two VC partners for founders preparing for enterprise customers or their first audit.",
+          "Pilot monthly office hours with two VC partners for founders preparing for enterprise customers or their first audit.",
       },
       {
         title: "Host the first founder dinner",
         detail:
-          "Bring together founders from one priority fund to discuss enterprise readiness, security and scaling challenges.",
+          "Bring together founders from Cherry, Seedcamp and Crane to discuss enterprise readiness, security and scaling challenges.",
       },
       {
         title: "Build the VC Partner Toolkit",
