@@ -20,15 +20,6 @@ export default function Home() {
       <Timeline />
       <FiveIdeas />
 
-      <div className="border-t border-line px-6 py-20 md:px-14">
-        <p className="mx-auto max-w-2xl text-center font-display text-xl leading-relaxed text-paper md:text-2xl">
-          Six years watching this market. Three years working inside it.{" "}
-          <span className="italic text-accent">
-            This is the plan for pointing all of it at Vanta.
-          </span>
-        </p>
-      </div>
-
       <footer className="border-t border-line px-6 py-10 md:px-14">
         <div className="mx-auto flex max-w-4xl justify-center">
           <a
