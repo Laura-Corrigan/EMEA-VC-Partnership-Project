@@ -219,8 +219,28 @@ export const europeRegions: EuropeRegion[] = [
   },
 ];
 
-export const europeanNetwork =
-  "Active member of Women in VC (UnlockVC) since the group started — 400+ female GPs, LPs, investors and founders across Europe. Share deal flow and market insight with the group regularly.";
+export type NetworkCredential = {
+  name: string;
+  detail: string;
+};
+
+export const europeanNetworks: NetworkCredential[] = [
+  {
+    name: "Women in VC (UnlockVC)",
+    detail:
+      "Active member since the group started — 400+ female GPs, LPs, investors and founders across Europe. Share deal flow and market insight with the group regularly.",
+  },
+  {
+    name: "Common Ventures",
+    detail:
+      "Founding working group member — 1,500+ state-educated founders, investors and operators.",
+  },
+  {
+    name: "LPAC seats",
+    detail:
+      "Sit on LPACs across a broad base of European VC funds — quarterly updates, AGM attendance, real governance access, not just a name on the cap table.",
+  },
+];
 
 export type KpiTarget = {
   code: string;

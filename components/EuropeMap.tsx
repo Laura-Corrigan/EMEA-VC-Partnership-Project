@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { europeRegions, europeanNetwork, type EuropeRegion } from "@/lib/data";
+import { europeRegions, europeanNetworks, type EuropeRegion } from "@/lib/data";
 import { SectionWrapper } from "./SectionWrapper";
 
 export function EuropeMap() {
@@ -124,9 +124,14 @@ export function EuropeMap() {
         <p className="font-mono text-[10px] uppercase tracking-wider text-accent">
           Across all of it
         </p>
-        <p className="mt-1.5 text-sm leading-relaxed text-paper md:text-base">
-          {europeanNetwork}
-        </p>
+        <div className="mt-3 flex flex-col gap-3">
+          {europeanNetworks.map((network) => (
+            <div key={network.name}>
+              <p className="font-display text-base text-paper">{network.name}</p>
+              <p className="mt-0.5 text-sm leading-relaxed text-mist">{network.detail}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </SectionWrapper>
   );
