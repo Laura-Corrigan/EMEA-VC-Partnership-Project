@@ -9,7 +9,7 @@ export function ExecSummary() {
       index="01"
       eyebrow="Objective"
       title="What the first 90 days needs to prove."
-      lede="From 6 years embedded in the European VC market, and 3 years of direct VC experience: Seedcamp, Balderton, Cherry Ventures — the funds day one starts with — are weekly WhatsApp contacts. This is the plan for turning that into qualified pipeline for Vanta."
+      lede="Establish Vanta as the go-to compliance co-founder for Europe's next generation of startups by building trusted partnerships across the venture ecosystem, helping founders get security and compliance right from day one, and creating a repeatable founder referral engine that compounds over time."
     >
       <></>
     </SectionWrapper>
